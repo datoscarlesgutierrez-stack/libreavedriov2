@@ -1,0 +1,32 @@
+/* =============================================
+   LIBREAVEDRIO v2 — config.css
+   Variables de diseño del sistema
+   ============================================= */
+
+:root {
+  /* Paleta oficial */
+  --color-ivory:    #F7F3EB;   /* Fondo principal */
+  --color-burgundy: #930D24;   /* Botones, acentos, logo */
+  --color-carbon:   #0E0F11;   /* Títulos y texto */
+  --color-sand:     #E6DCCE;   /* Fondos secundarios, separadores */
+  --color-orange:   #E37720;   /* Naranja del huevo, detalles */
+
+  /* Tipografía */
+  --font-title: 'Montserrat', sans-serif;
+  --font-body:  'Open Sans', sans-serif;
+  --font-hand:  'Indie Flower', cursive;
+
+  /* Espaciado base */
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  2rem;
+  --space-lg:  4rem;
+  --space-xl:  6rem;
+
+  /* Anchuras */
+  --max-width: 1200px;
+  --nav-height: 72px;
+
+  /* Transiciones */
+  --transition: 0.3s ease;
+}

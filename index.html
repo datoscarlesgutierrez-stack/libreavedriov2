@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Libreavedrio — Granja avícola ecológica Sierra Norte de Madrid</title>
+  <meta name="description" content="Huevos ecológicos de gallinas en libertad en la Sierra Norte de Madrid. Conoce Libreavedrio, una granja con alma." />
+  <link rel="icon" href="/favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html">
+        <img src="/images/logo.svg" alt="Libreavedrio" />
+        <span class="tagline">Granja avícola ecológica Sierra Norte de Madrid</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li class="nav-dropdown">
+          <a href="#">¿Quiénes somos? ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="historia.html">Nuestra historia</a></li>
+            <li><a href="principios.html">Principios</a></li>
+          </ul>
+        </li>
+        <li><a href="granja.html">La granja</a></li>
+        <li><a href="#">Tienda <span class="badge-soon">Pronto</span></a></li>
+        <li><a href="#">Lo que es la vida <span class="badge-soon">Pronto</span></a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─────────────────────────────── -->
+  <section class="hero" style="margin-top: 0;">
+    <div class="hero-bg" style="background-image:url('/images/bosque_1.jpg'); opacity:0;"></div>
+    <div class="hero-bg" style="background-image:url('/images/bosque_2.jpg'); opacity:0;"></div>
+    <div class="hero-bg" style="background-image:url('/images/bosque_3.jpg'); opacity:0;"></div>
+    <div class="hero-bg" style="background-image:url('/images/bosque_4.jpg'); opacity:0;"></div>
+    <div class="hero-bg" style="background-image:url('/images/bosque_5.jpg'); opacity:0;"></div>
+    <div class="hero-bg" style="background-image:url('/images/bosque_6.jpg'); opacity:0;"></div>
+    <div class="hero-bg" style="background-image:url('/images/bosque_7.jpg'); opacity:0;"></div>
+    <div class="hero-bg" style="background-image:url('/images/bosque_8.jpg'); opacity:0;"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Sierra Norte de Madrid</p>
+      <h1 class="hero-title">Huevos con historia,<br>gallinas con libertad</h1>
+      <p class="hero-subtitle">Una granja ecológica donde las gallinas viven como gallinas y los huevos saben a algo.</p>
+      <div class="hero-cta">
+        <a href="granja.html" class="btn btn-primary">Conoce la granja</a>
+        <a href="contacto.html" class="btn btn-outline">Contactar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── INTRO EDITORIAL ───────────────────── -->
+  <section class="section bg-ivory">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-text">
+          <p class="section-label">Quiénes somos</p>
+          <h2 class="section-title">Una granja diferente<br>en la sierra</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">
+            Libreavedrio nació de la convicción de que se puede criar de otra manera. 
+            Sin jaulas, sin prisas, sin química. En plena Sierra Norte de Madrid, 
+            nuestras gallinas campan entre encinas y robles como lo han hecho siempre.
+          </p>
+          <a href="historia.html" class="btn btn-dark">Nuestra historia</a>
+        </div>
+        <div class="intro-image">
+          <div class="polaroid">
+            <img src="/images/granja_1.png" alt="Gallinas en libertad" />
+            <p class="polaroid-caption">las chicas, con su parcela</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── 3 PILARES ─────────────────────────── -->
+  <section class="section bg-sand">
+    <div class="container text-center">
+      <p class="section-label">Por qué Libreavedrio</p>
+      <h2 class="section-title">Lo que nos hace distintos</h2>
+      <div class="divider divider-center"></div>
+      <div class="cards-grid mt-md">
+        <div class="card">
+          <div class="card-icon">🐔</div>
+          <h3 class="card-title">Vida en libertad</h3>
+          <p class="card-text">Acceso real al exterior, tierra bajo las patas y comportamiento natural. Sin jaulas ni hacinamiento.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🌿</div>
+          <h3 class="card-title">100% ecológico</h3>
+          <p class="card-text">Sin pesticidas, sin antibióticos preventivos. Alimentación certificada y bienestar animal auditado.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏔️</div>
+          <h3 class="card-title">Sierra Norte</h3>
+          <p class="card-text">A 1.000 metros de altitud, aire limpio y espacio de verdad. El entorno que merecen los animales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA + MAPA ────────────────────────── -->
+  <section class="section bg-ivory">
+    <div class="container">
+      <div class="intro-grid reverse">
+        <div class="intro-text">
+          <p class="section-label">Dónde estamos</p>
+          <h2 class="section-title">Ven a vernos</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">
+            Estamos en la Sierra Norte de Madrid, en un entorno privilegiado.
+            Si quieres conocer la granja, escríbenos y lo organizamos.
+          </p>
+          <a href="contacto.html" class="btn btn-primary">Escríbenos</a>
+        </div>
+        <div>
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/images/logo.svg" alt="Libreavedrio" />
+        <p>Granja avícola ecológica en la Sierra Norte de Madrid. Huevos de gallinas felices.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Páginas</p>
+        <ul class="footer-links">
+          <li><a href="historia.html">Nuestra historia</a></li>
+          <li><a href="principios.html">Principios</a></li>
+          <li><a href="granja.html">La granja</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contacto</p>
+        <ul class="footer-links">
+          <li><a href="mailto:hola@granjalibreavedrio.es">hola@granjalibreavedrio.es</a></li>
+          <li><a href="https://www.instagram.com/libreavedrio" target="_blank">@libreavedrio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Libreavedrio · granjalibreavedrio.es</span>
+      <span>Hecho con amor en la sierra</span>
+    </div>
+  </footer>
+
+</body>
+</html>

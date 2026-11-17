@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Granja — Libreavedrio</title>
+  <meta name="description" content="Conoce las instalaciones de Granja Libreavedrio: nave, parcelas, gallineros y más en la Sierra Norte de Madrid." />
+  <link rel="icon" href="/favicon.png" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html">
+        <img src="/images/logo.svg" alt="Libreavedrio" />
+        <span class="tagline">Granja avícola ecológica Sierra Norte de Madrid</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li class="nav-dropdown">
+          <a href="#">¿Quiénes somos? ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="historia.html">Nuestra historia</a></li>
+            <li><a href="principios.html">Principios</a></li>
+          </ul>
+        </li>
+        <li><a href="granja.html">La granja</a></li>
+        <li><a href="#">Tienda <span class="badge-soon">Pronto</span></a></li>
+        <li><a href="#">Lo que es la vida <span class="badge-soon">Pronto</span></a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── HERO INTERIOR ────────────────────── -->
+  <section style="
+    padding-top: calc(var(--nav-height) + 80px);
+    padding-bottom: 80px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: var(--color-sand);
+    text-align: center;
+  ">
+    <div class="container">
+      <p class="section-label">Las instalaciones</p>
+      <h1 class="section-title" style="font-size: clamp(2rem, 5vw, 3.5rem);">La Nave y las Instalaciones</h1>
+      <div class="divider divider-center"></div>
+      <p class="section-subtitle" style="margin: 0 auto;">
+        Espacios pensados para el bienestar de las aves, con todo lo que necesitan para vivir como gallinas de verdad.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── GALERÍA POLAROID ──────────────────── -->
+  <section class="section bg-ivory">
+    <div class="container">
+
+      <div class="intro-grid" style="margin-bottom: var(--space-xl);">
+        <div class="intro-image">
+          <div class="polaroid" style="transform: rotate(1deg);">
+            <img src="/images/granja_1.png" alt="Interior de la nave" />
+            <p class="polaroid-caption">la nave principal</p>
+          </div>
+        </div>
+        <div class="intro-text">
+          <span class="tag tag-burg">La nave</span>
+          <h2 class="section-title mt-sm">El corazón de la granja</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">
+            La nave es el refugio nocturno de las gallinas. Diseñada para la ventilación natural, 
+            con nidos en altura y perchas a distintos niveles. Limpieza y mantenimiento sin productos químicos agresivos.
+          </p>
+        </div>
+      </div>
+
+      <div class="intro-grid reverse" style="margin-bottom: var(--space-xl);">
+        <div class="intro-text">
+          <span class="tag tag-orange">Las parcelas</span>
+          <h2 class="section-title mt-sm">Espacio de verdad</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">
+            Cada lote de gallinas cuenta con parcelas rotativas para que el suelo se recupere. 
+            Hierba fresca, insectos, tierra. Lo que necesitan para ser gallinas.
+          </p>
+        </div>
+        <div class="intro-image">
+          <div class="polaroid" style="transform: rotate(-2deg);">
+            <img src="/images/granja_2.jpg" alt="Parcelas exteriores" />
+            <p class="polaroid-caption">a campo abierto</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="intro-grid" style="margin-bottom: var(--space-xl);">
+        <div class="intro-image">
+          <div class="polaroid" style="transform: rotate(0.5deg);">
+            <img src="/images/granja_3.png" alt="Los gallineros" />
+            <p class="polaroid-caption">los gallineros pequeños</p>
+          </div>
+        </div>
+        <div class="intro-text">
+          <span class="tag">Los huevos</span>
+          <h2 class="section-title mt-sm">Nuestros huevos</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">
+            Recolectados a mano cada mañana. Código <strong>0</strong> (ecológico), 
+            con trazabilidad completa. La yema naranja intensa lo dice todo.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── CTA FINAL ─────────────────────────── -->
+  <section class="section bg-sand text-center">
+    <div class="container">
+      <p class="section-label">¿Quieres saber más?</p>
+      <h2 class="section-title">Visita la granja</h2>
+      <div class="divider divider-center"></div>
+      <p class="section-subtitle">Organizamos visitas para grupos pequeños. Escríbenos y lo hablamos.</p>
+      <a href="contacto.html" class="btn btn-primary">Contactar</a>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/images/logo.svg" alt="Libreavedrio" />
+        <p>Granja avícola ecológica en la Sierra Norte de Madrid.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Páginas</p>
+        <ul class="footer-links">
+          <li><a href="historia.html">Nuestra historia</a></li>
+          <li><a href="principios.html">Principios</a></li>
+          <li><a href="granja.html">La granja</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contacto</p>
+        <ul class="footer-links">
+          <li><a href="mailto:hola@granjalibreavedrio.es">hola@granjalibreavedrio.es</a></li>
+          <li><a href="https://www.instagram.com/libreavedrio" target="_blank">@libreavedrio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Libreavedrio · granjalibreavedrio.es</span>
+      <span>Hecho con amor en la sierra</span>
+    </div>
+  </footer>
+
+</body>
+</html>

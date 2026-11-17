@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — Libreavedrio</title>
+  <meta name="description" content="Contacta con Granja Libreavedrio. Huevos ecológicos en la Sierra Norte de Madrid." />
+  <link rel="icon" href="/favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html">
+        <img src="/images/logo.svg" alt="Libreavedrio" />
+        <span class="tagline">Granja avícola ecológica Sierra Norte de Madrid</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li class="nav-dropdown">
+          <a href="#">¿Quiénes somos? ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="historia.html">Nuestra historia</a></li>
+            <li><a href="principios.html">Principios</a></li>
+          </ul>
+        </li>
+        <li><a href="granja.html">La granja</a></li>
+        <li><a href="#">Tienda <span class="badge-soon">Pronto</span></a></li>
+        <li><a href="#">Lo que es la vida <span class="badge-soon">Pronto</span></a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── HERO INTERIOR ────────────────────── -->
+  <section style="
+    padding-top: calc(var(--nav-height) + 80px);
+    padding-bottom: 80px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: var(--color-sand);
+  ">
+    <div class="container">
+      <p class="section-label">Estamos aquí</p>
+      <h1 class="section-title" style="font-size: clamp(2rem, 5vw, 3.5rem);">Escríbenos</h1>
+      <div class="divider"></div>
+      <p class="section-subtitle">
+        Para pedidos, visitas o simplemente para saludar: 
+        <a href="mailto:hola@granjalibreavedrio.es" style="color: var(--color-burgundy); font-weight: 600;">hola@granjalibreavedrio.es</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── FORMULARIO + DATOS ───────────────── -->
+  <section class="section bg-ivory">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 400px; gap: var(--space-xl); align-items: start;">
+
+        <!-- Formulario -->
+        <div>
+          <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: var(--space-md);">Envíanos un mensaje</h2>
+          <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+              </div>
+              <div class="form-field full">
+                <label for="asunto">Asunto</label>
+                <select id="asunto" name="asunto">
+                  <option value="">Selecciona un motivo</option>
+                  <option value="pedido">Pedido de huevos</option>
+                  <option value="visita">Visita a la granja</option>
+                  <option value="colaboracion">Colaboración</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div class="form-field full">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required placeholder="Cuéntanos…"></textarea>
+              </div>
+            </div>
+            <div style="margin-top: var(--space-md);">
+              <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+              <p id="form-msg" style="margin-top: 1rem; font-size: 0.9rem;"></p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Datos de contacto -->
+        <div style="padding-top: calc(1.8rem + var(--space-md));">
+          <div style="margin-bottom: var(--space-md);">
+            <p class="section-label">Email</p>
+            <a href="mailto:hola@granjalibreavedrio.es" style="font-size: 1rem; color: var(--color-burgundy); font-weight: 600;">
+              hola@granjalibreavedrio.es
+            </a>
+          </div>
+          <div style="margin-bottom: var(--space-md);">
+            <p class="section-label">Instagram</p>
+            <a href="https://www.instagram.com/libreavedrio" target="_blank" style="font-size: 1rem; color: var(--color-carbon);">
+              @libreavedrio
+            </a>
+          </div>
+          <div style="margin-bottom: var(--space-md);">
+            <p class="section-label">Ubicación</p>
+            <p style="font-size: 0.95rem; color: #666; line-height: 1.6;">
+              Sierra Norte de Madrid<br>
+              Coordenadas: 41.055714, −3.607230
+            </p>
+          </div>
+          <div>
+            <p class="section-label">Horario respuesta</p>
+            <p style="font-size: 0.9rem; color: #666;">Lunes a viernes, 9h–18h.<br>Respondemos en 24–48h.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MAPA ──────────────────────────────── -->
+  <div id="map" style="height: 400px;"></div>
+
+  <!-- ─── FOOTER ────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/images/logo.svg" alt="Libreavedrio" />
+        <p>Granja avícola ecológica en la Sierra Norte de Madrid.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Páginas</p>
+        <ul class="footer-links">
+          <li><a href="historia.html">Nuestra historia</a></li>
+          <li><a href="principios.html">Principios</a></li>
+          <li><a href="granja.html">La granja</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contacto</p>
+        <ul class="footer-links">
+          <li><a href="mailto:hola@granjalibreavedrio.es">hola@granjalibreavedrio.es</a></li>
+          <li><a href="https://www.instagram.com/libreavedrio" target="_blank">@libreavedrio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Libreavedrio · granjalibreavedrio.es</span>
+      <span>Hecho con amor en la sierra</span>
+    </div>
+  </footer>
+
+</body>
+</html>

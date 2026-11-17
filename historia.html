@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuestra Historia — Libreavedrio</title>
+  <meta name="description" content="Cómo nació Libreavedrio: la historia de una granja con alma en la Sierra Norte de Madrid." />
+  <link rel="icon" href="/favicon.png" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────── -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html">
+        <img src="/images/logo.svg" alt="Libreavedrio" />
+        <span class="tagline">Granja avícola ecológica Sierra Norte de Madrid</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li class="nav-dropdown">
+          <a href="#">¿Quiénes somos? ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="historia.html">Nuestra historia</a></li>
+            <li><a href="principios.html">Principios</a></li>
+          </ul>
+        </li>
+        <li><a href="granja.html">La granja</a></li>
+        <li><a href="#">Tienda <span class="badge-soon">Pronto</span></a></li>
+        <li><a href="#">Lo que es la vida <span class="badge-soon">Pronto</span></a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ─── HERO INTERIOR ────────────────────── -->
+  <section style="
+    padding-top: calc(var(--nav-height) + 80px);
+    padding-bottom: 80px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: var(--color-carbon);
+    color: #fff;
+    text-align: center;
+  ">
+    <div class="container">
+      <p class="section-label">¿Quiénes somos?</p>
+      <h1 class="section-title" style="color:#fff; font-size: clamp(2rem, 5vw, 3.5rem);">Nuestra historia</h1>
+      <div class="divider divider-center" style="background:#fff; opacity:0.3;"></div>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.75); margin:0 auto;">
+        Todo empezó con una pregunta: ¿por qué los huevos ya no saben a nada?
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── TIMELINE ─────────────────────────── -->
+  <section class="section bg-ivory">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 480px; gap: var(--space-xl); align-items: start;">
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <p class="timeline-year">2018</p>
+            <h2 class="timeline-title">La pregunta que lo empezó todo</h2>
+            <p class="timeline-text">
+              Después de años trabajando en la ciudad, nos hicimos una pregunta simple: 
+              ¿qué comemos realmente? La búsqueda de la respuesta nos llevó a la sierra.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-year">2019</p>
+            <h2 class="timeline-title">La finca</h2>
+            <p class="timeline-text">
+              Encontramos una finca en la Sierra Norte de Madrid con encinas, robles y espacio. 
+              El lugar perfecto para empezar algo diferente.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-year">2020</p>
+            <h2 class="timeline-title">Las primeras gallinas</h2>
+            <p class="timeline-text">
+              Las primeras 50 gallinas llegaron en primavera. Aprendimos con ellas: 
+              sus ritmos, sus necesidades, lo que significa el bienestar animal de verdad.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-year">2022</p>
+            <h2 class="timeline-title">Certificación ecológica</h2>
+            <p class="timeline-text">
+              Tras dos años de trabajo riguroso, obtuvimos la certificación ecológica oficial. 
+              Código 0. El reconocimiento de lo que siempre quisimos hacer.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <p class="timeline-year">Hoy</p>
+            <h2 class="timeline-title">Seguimos creciendo</h2>
+            <p class="timeline-text">
+              Libreavedrio sigue siendo una granja pequeña a propósito. 
+              Preferimos hacerlo bien a hacerlo grande.
+            </p>
+          </div>
+        </div>
+
+        <div style="position: sticky; top: 100px;">
+          <div class="polaroid" style="transform: rotate(-1deg); margin-bottom: var(--space-md);">
+            <img src="/images/granja_4.png" alt="Los inicios de la granja" />
+            <p class="polaroid-caption">los primeros días</p>
+          </div>
+          <div class="polaroid" style="transform: rotate(2deg);">
+            <img src="/images/granja_2.jpg" alt="La granja hoy" />
+            <p class="polaroid-caption">la granja hoy</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA ──────────────────────────────── -->
+  <section class="section bg-sand text-center">
+    <div class="container">
+      <p class="section-label">¿Seguimos?</p>
+      <h2 class="section-title">Conoce nuestros principios</h2>
+      <div class="divider divider-center"></div>
+      <a href="principios.html" class="btn btn-primary" style="margin-right: 1rem;">Ver principios</a>
+      <a href="granja.html" class="btn btn-dark">La granja</a>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="/images/logo.svg" alt="Libreavedrio" />
+        <p>Granja avícola ecológica en la Sierra Norte de Madrid.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Páginas</p>
+        <ul class="footer-links">
+          <li><a href="historia.html">Nuestra historia</a></li>
+          <li><a href="principios.html">Principios</a></li>
+          <li><a href="granja.html">La granja</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Contacto</p>
+        <ul class="footer-links">
+          <li><a href="mailto:hola@granjalibreavedrio.es">hola@granjalibreavedrio.es</a></li>
+          <li><a href="https://www.instagram.com/libreavedrio" target="_blank">@libreavedrio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Libreavedrio · granjalibreavedrio.es</span>
+      <span>Hecho con amor en la sierra</span>
+    </div>
+  </footer>
+
+</body>
+</html>
